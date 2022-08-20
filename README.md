@@ -45,4 +45,6 @@ Options +FollowSymLinks +SymLinksIfOwnerMatch
 ```
   
 ## All done 
-```sudo service apache2 restart```
+```
+sudo service apache2 restart
+```
