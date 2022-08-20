@@ -5,7 +5,8 @@
 
 ## default Apache web server dir in linux /var/www/html
 > make symlink to another dir with this comment 
-"""
+
+""" text
 eg: ln -s <source> <destination>
 sudo ln -s /home/nocturnalplay/demo /var/www/html
 """
@@ -20,7 +21,7 @@ sudo ln -s /home/nocturnalplay/demo /var/www/html
   
 > gives out like this below
   
-"""
+""" text
 home/nocturnalplay/demo/:
 total 4
 -rwxrwxr-x 1 root root 22 Aug 20 22:17 index.html
