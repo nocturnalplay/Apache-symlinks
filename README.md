@@ -31,8 +31,8 @@ lrwxrwxrwx 1 root root 26 Aug 20 22:28 index.html -> /home/nocturnalplay/demo/in
 ## If permission denied happend
 
 ```
-  sudo chmod 750 nocturnalplay
-  sudo adduser www-data nocturnalplay
+sudo chmod 750 nocturnalplay
+sudo adduser www-data nocturnalplay
 ```
 > now repeat the same process 
 ```
@@ -45,4 +45,4 @@ Options +FollowSymLinks +SymLinksIfOwnerMatch
 ```
   
 ## All done 
-> sudo service apache2 restart
+```sudo service apache2 restart```
