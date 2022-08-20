@@ -7,7 +7,7 @@
 > make symlink to another dir with this comment 
 
 ```
-eg: ln -s <source> <destination>
+ln -s <source> <destination>
 sudo ln -s /home/nocturnalplay/demo /var/www/html
 ```
 
@@ -30,13 +30,21 @@ total 0
 lrwxrwxrwx 1 root root 26 Aug 20 22:28 index.html -> /home/nocturnalplay/demo/index.html
 ```
 
-# if permission denied happend
+## if permission denied happend
 
 ```
   sudo chmod 750 nocturnalplay
   sudo adduser www-data nocturnalplay
 ```
-> now repeat the same process " sudo -u www-data ls -l /var/www/html/ /home/nocturnalplay/demo "
+> now repeat the same process 
+```
+sudo -u www-data ls -l /var/www/html/ /home/nocturnalplay/demo 
+```
+## add .htaccess file and place the following cmd to run .php files
+
+```
+Options +FollowSymLinks +SymLinksIfOwnerMatch
+```
   
 ## all done 
 > sudo service apache2 restart
